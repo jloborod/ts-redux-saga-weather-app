@@ -8,6 +8,8 @@
     "@types/react": "16.8.14",
     "@types/react-dom": "16.8.4",
     "@types/react-redux": "^7.0.8",
+    "axios": "^0.18.0",
+    "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.2",
@@ -20,6 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:verbose": "yarn test -- --verbose",
+    "test:coverage": "yarn test -- --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
