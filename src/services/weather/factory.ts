@@ -3,7 +3,7 @@ import moment from 'moment';
 import {
   WeatherPayload,
   Weather,
-} from './interfaces';
+} from '../../types/weather';
 
 const ICON_URL = 'https://openweathermap.org/img/w/';
 
@@ -14,7 +14,6 @@ const ICON_URL = 'https://openweathermap.org/img/w/';
 export const transformPayload = (payload: WeatherPayload): Weather => ({
   city: `${payload.city.name} ${payload.city.country}`,
   list: payload.list
-    // .slice(0, 4) // We get only 4 items from list
     .map(item => ({
       day: moment.unix(item.dt).utc().format('dddd'),
       time: moment.unix(item.dt).utc().format('h:mmA'),
