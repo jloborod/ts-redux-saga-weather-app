@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import './WeatherForm.css';
+
 type Props = {
   city: string,
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
