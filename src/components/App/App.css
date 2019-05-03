@@ -1,6 +1,6 @@
 .App {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: flex-start;
+  align-content: flex-start;
+  justify-content: center;
 }

@@ -1,0 +1,32 @@
+.WeatherForm {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.WeatherForm > input {
+  border: none;
+  border-bottom: 2px solid #0069ed;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+}
+
+.WeatherForm > button {
+  border: 1px solid #0069ed;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.WeatherForm > button:focus {
+  outline: thin dotted;
+}

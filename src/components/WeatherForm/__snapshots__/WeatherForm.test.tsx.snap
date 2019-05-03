@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WeatherForm /> renders without crashing 1`] = `
+<form
+  className="WeatherForm"
+  onSubmit={[MockFunction]}
+>
+  <input
+    aria-label="City"
+    name="city"
+    onChange={[MockFunction]}
+    placeholder="Your city name"
+    value="Madrid"
+  />
+  <button
+    onSubmit={[MockFunction]}
+    type="submit"
+  >
+    Search
+  </button>
+</form>
+`;
