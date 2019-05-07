@@ -8,7 +8,7 @@ describe('<Weather />', () => {
     const wrapper = shallow(
       <Weather
         data={null}
-        error={false}
+        error={null}
         loading={true}
       />
     );
@@ -16,18 +16,19 @@ describe('<Weather />', () => {
 
     expect(Loading).toHaveLength(1);
   });
-  it('renders <Error /> when error prop is true', () => {
+  it('renders <Error /> when there is an error', () => {
+    const error = 'city not found.';
     const wrapper = shallow(
       <Weather
         data={null}
-        error={true}
+        error={error}
         loading={false}
       />
     );
     const Error = wrapper.find('Error');
 
     expect(Error).toHaveLength(1);
-    expect(Error.props().error).toBe('There was an error.');
+    expect(Error.props().error).toBe(error);
   });
   it('renders <WeatherTable /> when there is data', () => {
     const data = {
@@ -37,7 +38,7 @@ describe('<Weather />', () => {
     const wrapper = shallow(
       <Weather
         data={data}
-        error={false}
+        error={null}
         loading={false}
       />
     );

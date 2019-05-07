@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Error /> renders without crashing 1`] = `
-<p
+<span
   className="Error"
 >
   Something went wrong
-</p>
+</span>
 `;

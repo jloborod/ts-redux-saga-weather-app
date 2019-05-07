@@ -16,6 +16,7 @@ export const getWeatherSuccess = (payload: Weather): WeatherAction  => ({
   payload,
 });
 
-export const getWeatherFailure = (): WeatherAction  => ({
+export const getWeatherFailure = (payload: string): WeatherAction  => ({
   type: GET_WEATHER_FAILURE,
+  payload,
 });

@@ -20,7 +20,7 @@ export const Weather: React.FC<Props> = ({
       <WeatherTable data={data} />
     )}
     { error && (
-      <Error error='There was an error.' />
+      <Error error={error} />
     )}
     { loading && (
       <Loading />
