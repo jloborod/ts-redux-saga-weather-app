@@ -11,7 +11,7 @@ import { WeatherState } from '../types/states';
 
 export const initialState: WeatherState = {
   data: null,
-  error: false,
+  error: null,
   loading: false,
 };
 
@@ -23,19 +23,19 @@ const weatherReducer = (
     case GET_WEATHER_REQUEST:
       return {
         data: null,
-        error: false,
+        error: null,
         loading: true,
       };
     case GET_WEATHER_SUCCESS:
       return {
         data: action.payload,
-        error: false,
+        error: null,
         loading: false,
       };
     case GET_WEATHER_FAILURE:
       return {
         data: null,
-        error: true,
+        error: action.payload,
         loading: false,
       };
     default:

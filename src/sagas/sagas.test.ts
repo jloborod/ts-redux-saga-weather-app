@@ -32,7 +32,10 @@ describe('Weather Saga', () => {
   });
 
   it('should dispatch failure if there is any error', () => {
-    const error = {};
+    const error = {
+      cod: 404,
+      message: 'city not found'
+    };
     const generator = weatherSaga({
       type: GET_WEATHER_REQUEST,
       payload: 'Unknown city',
@@ -40,9 +43,14 @@ describe('Weather Saga', () => {
 
     expect(generator.next().value)
       .toEqual(call(getWeatherByCityName, 'Unknown city'));
-    expect(generator.throw(error).value)
+    expect(generator.throw({
+      response: {
+        data: error,
+      },
+    }).value)
       .toEqual(put({
         type: GET_WEATHER_FAILURE,
+        payload: error.message,
       }));
     expect(generator.next().done).toBe(true);
   });

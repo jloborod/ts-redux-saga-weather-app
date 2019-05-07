@@ -7,6 +7,6 @@ type Props = {
 };
 
 const Error: React.FC<Props> = ({ error }) =>
-  <p className='Error'>{error}</p>;
+  <span className='Error'>{error}</span>;
 
 export default Error;

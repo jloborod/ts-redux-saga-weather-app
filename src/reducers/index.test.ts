@@ -24,7 +24,7 @@ describe('Weather reducer', () => {
       }),
     ).toEqual({
       data: null,
-      error: false,
+      error: null,
       loading: true,
     });
   });
@@ -41,20 +41,21 @@ describe('Weather reducer', () => {
       ),
     ).toEqual({
       data: payload,
-      error: false,
+      error: null,
       loading: false,
     });
   });
 
   it('should handle GET_WEATHER_FAILURE', () => {
+    const payload = 'city not found';
     expect(
       reducer(
         { ...initialState, loading: true },
-        { type: GET_WEATHER_FAILURE },
+        { type: GET_WEATHER_FAILURE, payload },
       ),
     ).toEqual({
       data: null,
-      error: true,
+      error: payload,
       loading: false,
     });
   });

@@ -22,6 +22,7 @@ interface GetWeatherSuccessAction {
 
 interface GetWeatherFailureAction {
   type: typeof GET_WEATHER_FAILURE;
+  payload: string;
 }
 
 export type WeatherAction =
