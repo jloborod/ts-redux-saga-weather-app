@@ -27,7 +27,6 @@ export interface WeatherPayload {
       main: string;
       description: string;
       icon: string;
-      dt: number;
     }[];
   }[];
 }
