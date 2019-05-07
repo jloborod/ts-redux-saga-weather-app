@@ -10,6 +10,7 @@ export interface Weather {
     time: string;
     temp: string;
     icon: string;
+    dt: number;
   }[];
 }
 
@@ -26,6 +27,7 @@ export interface WeatherPayload {
       main: string;
       description: string;
       icon: string;
+      dt: number;
     }[];
   }[];
 }

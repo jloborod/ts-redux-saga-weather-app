@@ -23,7 +23,8 @@ describe('Weather reducer', () => {
         payload: 'Madrid',
       }),
     ).toEqual({
-      ...initialState,
+      data: null,
+      error: false,
       loading: true,
     });
   });
@@ -52,8 +53,9 @@ describe('Weather reducer', () => {
         { type: GET_WEATHER_FAILURE },
       ),
     ).toEqual({
-      ...initialState,
+      data: null,
       error: true,
+      loading: false,
     });
   });
 });

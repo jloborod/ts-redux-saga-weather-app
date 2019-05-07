@@ -13,7 +13,7 @@ export const getWeatherByCityName = (city: string) =>
     params: {
       q: city,
       units: 'metric',
-      cnt: 8,
+      cnt: 4,
       appId: API_KEY,
     },
   })

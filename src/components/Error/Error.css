@@ -1,0 +1,4 @@
+.Error {
+  color: var(--error-color);
+  font-weight: 500;
+};

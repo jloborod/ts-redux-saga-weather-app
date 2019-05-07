@@ -16,13 +16,13 @@ export const initialState: WeatherState = {
 };
 
 const weatherReducer = (
-  state = initialState,
+  state: WeatherState = initialState,
   action: WeatherAction | InitAction,
 ): WeatherState => {
   switch (action.type) {
     case GET_WEATHER_REQUEST:
       return {
-        ...state,
+        data: null,
         error: false,
         loading: true,
       };

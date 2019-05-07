@@ -1,8 +1,12 @@
 :root {
-  --primary: #d26c22;
-  --primary-hover: #9e511a;
-  --secondary: #F1B720;
-  --secondary-hover: #EBD292;
+  --primary-color: #263c71;
+  --secondary-color: #25ADF0;
+  --error-color: #d0021b;
+  --default-border-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
