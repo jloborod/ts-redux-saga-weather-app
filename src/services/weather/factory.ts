@@ -18,7 +18,8 @@ export const transformPayload = (payload: WeatherPayload): Weather => ({
       day: moment.unix(item.dt).utc().format('dddd'),
       time: moment.unix(item.dt).utc().format('h:mmA'),
       temp: `${Math.round(item.main.temp)}`,
-      icon: `${ICON_URL}${item.weather[0].icon}`
+      icon: `${ICON_URL}${item.weather[0].icon}.png`,
+      dt: item.dt
     })),
 });
 

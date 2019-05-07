@@ -1,14 +1,12 @@
-import factory from './factory';
-import mock from './mock-data';
+import React from 'react';
+import { shallow } from 'enzyme';
 
-describe('Weather factory', () => {
-  it('creates weather', () => {
+import WeatherTable from './';
+
+describe('<WeatherTable />', () => {
+  it('renders without crashing', () => {
     const ICON_URL = 'https://openweathermap.org/img/w/';
-    const payload = mock.madrid;
-
-    const weather = factory.transformPayload(payload);
-
-    expect(weather).toEqual({
+    const data = {
       city: 'Madrid ES',
       list: [
         {
@@ -40,6 +38,9 @@ describe('Weather factory', () => {
           dt: 1556064000,
         },
       ],
-    });
+    };
+    const wrapper = shallow(<WeatherTable data={data} />);
+
+    expect(wrapper).toMatchSnapshot();
   });
 });

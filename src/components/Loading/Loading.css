@@ -1,0 +1,30 @@
+.Loading {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  /* transition: opacity linear 0.1s */
+  transition: color 0.25s;
+}
+
+.Loading::before {
+  animation: 1s linear infinite spinner;
+  border: solid 3px #eee;
+  border-bottom-color: var(--primary-color);
+  border-radius: 50%;
+  content: '';
+  height: 40px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 40px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}

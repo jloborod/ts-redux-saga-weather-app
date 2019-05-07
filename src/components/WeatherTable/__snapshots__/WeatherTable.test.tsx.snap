@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WeatherTable /> renders without crashing 1`] = `
+<table
+  className="WeatherTable"
+>
+  <thead>
+    <tr>
+      <th
+        key="th-1556031600"
+      >
+        Tuesday
+        <br />
+        3:00PM
+      </th>
+      <th
+        key="th-1556042400"
+      >
+        Tuesday
+        <br />
+        6:00PM
+      </th>
+      <th
+        key="th-1556053200"
+      >
+        Tuesday
+        <br />
+        9:00PM
+      </th>
+      <th
+        key="th-1556064000"
+      >
+        Wednesday
+        <br />
+        12:00AM
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td
+        key="td-1556031600"
+      >
+        <img
+          aria-label="icon"
+          src="https://openweathermap.org/img/w/03d.png"
+        />
+        <span>
+          13
+           ℃
+        </span>
+      </td>
+      <td
+        key="td-1556042400"
+      >
+        <img
+          aria-label="icon"
+          src="https://openweathermap.org/img/w/03d.png"
+        />
+        <span>
+          10
+           ℃
+        </span>
+      </td>
+      <td
+        key="td-1556053200"
+      >
+        <img
+          aria-label="icon"
+          src="https://openweathermap.org/img/w/04n.png"
+        />
+        <span>
+          7
+           ℃
+        </span>
+      </td>
+      <td
+        key="td-1556064000"
+      >
+        <img
+          aria-label="icon"
+          src="https://openweathermap.org/img/w/04n.png"
+        />
+        <span>
+          6
+           ℃
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
