@@ -2,7 +2,6 @@
   width: 100px;
   height: 100px;
   position: relative;
-  /* transition: opacity linear 0.1s */
   transition: color 0.25s;
 }
 
