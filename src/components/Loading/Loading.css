@@ -1,25 +1,15 @@
 .Loading {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  transition: color 0.25s;
+  width: 3em;
+  height: 3em;
+  display: flex;
+	transition: color 0.25s;
+	border: solid 3px #eee;
+	border-bottom-color: var(--primary-color);
+	border-radius: 50%;
+	animation: 1s linear infinite spin;
 }
 
-.Loading::before {
-  animation: 1s linear infinite spinner;
-  border: solid 3px #eee;
-  border-bottom-color: var(--primary-color);
-  border-radius: 50%;
-  content: '';
-  height: 40px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  width: 40px;
-}
-
-@keyframes spinner {
+@keyframes spin {
   0% {
     transform: translate3d(-50%, -50%, 0) rotate(0deg);
   }
