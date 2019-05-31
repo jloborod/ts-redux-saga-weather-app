@@ -1,3 +1,5 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/jloborod/ts-redux-saga-weather-app/badge.svg)](https://snyk.io/test/github/jloborod/ts-redux-saga-weather-app)
+
 # React Weather App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses [Typescript](https://github.com/Microsoft/TypeScript) and [Redux Saga](https://github.com/redux-saga/redux-saga).
