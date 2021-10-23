@@ -16,7 +16,8 @@
     "react-scripts": "3.0.0",
     "redux": "^4.0.1",
     "redux-saga": "^1.0.2",
-    "typescript": "3.4.4"
+    "typescript": "3.4.4",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,7 +25,9 @@
     "test": "react-scripts test",
     "test:verbose": "yarn test -- --verbose",
     "test:coverage": "yarn test -- --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,5 +46,6 @@
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.3.5",
     "redux-mock-store": "^1.5.3"
-  }
+  },
+  "snyk": true
 }
